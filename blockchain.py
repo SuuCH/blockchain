@@ -47,8 +47,8 @@ def reg_trans(sender, destination, money):
 
 
 myblockchain = BlockChain()
-myblockchain.add_block(Block(1, str(datetime.datetime.now()),reg_trans("藤井 陸", "安倍 晋三", 100), myblockchain.chain[0].n_hash))
-myblockchain.add_block(Block(2, str(datetime.datetime.now()),reg_trans("安倍　晋三", "藤井　陸", 200), myblockchain.chain[1].n_hash))
+myblockchain.add_block(Block(1, str(datetime.datetime.now()),reg_trans("田中", "安倍", 100), myblockchain.chain[0].n_hash))
+myblockchain.add_block(Block(2, str(datetime.datetime.now()),reg_trans("安倍", "佐藤", 200), myblockchain.chain[1].n_hash))
 
 for i in range(0, len(myblockchain.chain)):
     print("Block : " , myblockchain.chain[i].index)
